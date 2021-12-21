@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/form.css">
+    <script src="/js/canvas.js"></script>
+    <script src="/js/buttons.js"></script>
+    <script src="/js/buttons.js"></script>
+</head>
+<body onload="initDraw()">
+    <div class="main-container">
+        <div class="header-container">
+            <header>
+                <div class="header-flex">
+                    <div class="settings-icons">
+                        <div id="dark-mode">
+                            <img src="assets/icon/toggle.svg" alt="" srcset="" class="toggle-btn" onclick="setLight()">
+                            <span class="light-mode">day mode</span>
+                        </div>
+                        <img src="assets/icon/language.svg" alt="" srcset=""  class="language-icon" onclick="changeLanguage()">
+                    </div>
+                    <div class="navigation">
+                        <nav>
+                            <img src="assets/icon/hamburguer.svg" alt="" srcset="" class="hamburguer-btn" onclick="showUpMenu()">
+                            <ul class="nav-menu">
+                                <a href="#work-section">
+                                    <li>work</li>
+                                </a>
+                                <a href="">
+                                    <li>about me</li>
+                                </a>
+                                <a href="#form-section">
+                                    <li>contact</li>
+                                </a>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div id="logo">
+            <img src="assets/img/logo.svg" alt="" srcset="">
+        </div>
+        <section class="title">
+            <h1 class="english-text"><span class="saira text-color-sw">{</span>HELLO<span class="saira text-color-sw">}</span></h1>
+            <h1 class="spanish-text"><span class="saira text-color-sw">{</span>HOLA<span class="saira text-color-sw">}</span></h1>
+            <p class="english-text text-color-sw">I’m going to become a full stack developer</p>
+            <p class="spanish-text text-color-sw">Seré un desarrollador web full stack</p>
+        </section>
+        <div id="scroll-down">
+            <span>Scroll Down</span>
+            <img src="assets/icon/scroll.svg" alt="" srcset="" class="scroll-btn">
+        </div>
+    </div>
+    <!-- time line section -->
+    <div class="timeline-container" id="work-section">
+        <section class="timeline" >
+            <div class="timeline-items">
+                <div class="time-item">
+                    <div class="line-draw">
+                        <canvas class="canvasElement"></canvas>
+                    </div>
+                    <h3 class="date-text">2021</h3>
+                    <div class="line-draw">
+                        <canvas class="canvasElement"></canvas>
+                    </div>
+                </div>
+                <div class="work-card">
+                    <img src="" alt="" srcset="" class="wokr-portfolio">
+                    <p class="work-description">
+                        Duis tempor voluptate ad officia. Elit dolor ea esse elit incididunt nisi qui ipsum exercitation aliqua minim consectetur reprehenderit commodo. Incididunt dolore sit consectetur amet consequat. Veniam irure aliqua et ut qui sint eu labore. 
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-items">
+                <div class="time-item">
+                    <div class="line-draw">
+                        <canvas class="canvasElement"></canvas>
+                    </div>
+                    <h3 class="date-text">2021</h3>
+                    <div class="line-draw">
+                        <canvas class="canvasElement"></canvas>
+                    </div>
+                </div>
+                <div class="work-card">
+                    <img src="" alt="" srcset="" class="wokr-portfolio">
+                    <p class="work-description">
+                        Duis tempor voluptate ad officia. Elit dolor ea esse elit incididunt nisi qui ipsum exercitation aliqua minim consectetur reprehenderit commodo. Incididunt dolore sit consectetur amet consequat. Veniam irure aliqua et ut qui sint eu labore.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-items">
+                <div class="time-item">
+                    <div class="line-draw">
+                        <canvas    class="canvasElement"></canvas>
+                    </div>
+                    <h3 class="date-text">2021</h3>
+                    <div class="line-draw">
+                        <canvas   class="canvasElement"></canvas>
+                    </div>
+                </div>
+                <div class="work-card">
+                    <img src="" alt="" srcset="" class="wokr-portfolio">
+                    <p class="work-description">
+                        Duis tempor voluptate ad officia. Elit dolor ea esse elit incididunt nisi qui ipsum exercitation aliqua minim consectetur reprehenderit commodo. Incididunt dolore sit consectetur amet consequat. Veniam irure aliqua et ut qui sint eu labore.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-items">
+                <div class="time-item">
+                    <div class="line-draw">
+                        <canvas    class="canvasElement"></canvas>
+                    </div>
+                    <h3 class="date-text">2021</h3>
+                    <div class="line-draw">
+                        <canvas   class="canvasElement"></canvas>
+                    </div>
+                </div>
+                <div class="work-card">
+                    <img src="" alt="" srcset="" class="wokr-portfolio">
+                    <p class="work-description">
+                        Duis tempor voluptate ad officia. Elit dolor ea esse elit incididunt nisi qui ipsum exercitation aliqua minim consectetur reprehenderit commodo. Incididunt dolore sit consectetur amet consequat. Veniam irure aliqua et ut qui sint eu labore.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- about me -->
+    <section>
+        <p>Nostrud dolor fugiat consectetur aute eu ipsum dolore mollit consequat ex incididunt mollit sint. Enim anim incididunt labore do ullamco sint pariatur est eu commodo amet sint dolore fugiat. Commodo ad ullamco duis occaecat culpa mollit Lorem laboris adipisicing enim aliquip tempor. Qui officia velit velit culpa ut sunt voluptate nulla qui. Ullamco in culpa fugiat ullamco est nisi. Consequat proident Lorem ad irure sunt adipisicing pariatur consequat exercitation ea ad ad.</p>
+        <img src="/assets/img/avatar.png" alt="">
+        <canvas id="html-circle" width="100" height="100" ></canvas>
+        <canvas id="css-circle" width="100" height="100" ></canvas>
+        <canvas id="javascript-circle" width="100" height="100" ></canvas>
+    </section>
+    <!-- Form -->
+        <section class="form" id="form-section">
+            <form action="">
+                <div class="form-grid">
+                    <div class="form-container">
+                        <p>
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="" id="firstName">
+                        </p>
+                        <p>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="" id="lastName">
+                        </p>
+                        <p>
+                            <label for="emailAddress">Email Address</label>
+                            <input type="email" name="" id="emailAddress">
+                        </p>
+                    
+                        <p>
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="text" name="" id="phoneNumber">
+                        </p>
+                        <p>
+                            <label for="messageText">Message Text</label>
+                            <input type="text" name="" id="messageText">
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </section>
+    
+</body>
+
+</html>

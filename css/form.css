@@ -1,0 +1,42 @@
+.form-grid {
+    width: 100vw;
+    height: 100vh;
+}
+.form-container {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    position: relative;
+}
+
+.form-container label {
+    position: absolute;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-left: 1em;
+}
+
+.form-container input {
+    background-color: #000000;
+    outline: none;
+    border: 1px solid #C8133D;
+    border-radius: 1em;
+    width: 80%;
+    padding: 0.5rem;
+    color: #FFFFFF;
+    
+}
+
+
+
+.form-container p {
+    display: flex;
+    justify-content: flex-start;
+    justify-self: center;
+    align-items: center;
+}
+
+.form-container p:nth-child(5) {
+    grid-column : 1/3;
+    width: 100%;
+    justify-self: center;
+}
