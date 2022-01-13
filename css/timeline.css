@@ -1,25 +1,49 @@
 .timeline-container {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    height: 100vh;
-}
-.timeline {
-    grid-column: 2/3;
-    height: 100%;
+    grid-column: 1/6;
+    grid-row: 1/6;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.timeline-items {
-    display: flex;
-    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
-.work-card {
-    align-self: center;
-    margin-left: 10%;
-}
-.time-item {
+.timeline-items {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    position: relative;
+}
+
+.timeline-items::before{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 80%;
+    background-color: #FFF;
+    transform:translate( +3px);
+    align-self: flex-end;
+}
+
+.timeline-items:nth-child(odd){
+    padding-right: 50%;
+    flex-direction: row-reverse;
+    transform:translate( +3px)
+}
+
+.timeline-items:nth-child(even){
+    padding-left: 50%;
+}
+
+.timeline-items:nth-child(odd) .date-text {
+    transform:translate(50%, 100%)
+} 
+
+.timeline-items:nth-child(even) .date-text {
+    transform:translate(-50%, 100%)
+} 
+
+
+
+.date-text {
+    color: #C8133D;
 }
