@@ -1,11 +1,10 @@
 .timeline-container {
-    grid-column: 1/6;
-    grid-row: 1/6;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 1em;
     padding-bottom: 1em;
+    min-height: 100vh;
 }
 
 .timeline-items {
@@ -19,7 +18,7 @@
     position: absolute;
     width: 3px;
     height: 80%;
-    background-color: #FFF;
+    background-color: var(--color);
     transform:translate( +3px);
     align-self: flex-end;
 }
@@ -32,6 +31,7 @@
 
 .timeline-items:nth-child(even){
     padding-left: 50%;
+    justify-self: flex-end;
 }
 
 .timeline-items:nth-child(odd) .date-text {
@@ -42,8 +42,25 @@
     transform:translate(-50%, 100%)
 } 
 
-
+.work-card {
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content:center;
+    align-items: center;
+    width : 100%;
+    align-self: center;
+}
 
 .date-text {
+    background-color: --color;
     color: #C8133D;
+
+}
+
+@media (min-width: 2560px) {
+
+    .work-card img {
+        flex-direction: column;
+    }
+    
 }

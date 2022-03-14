@@ -3,7 +3,9 @@ let initDraw = function(color) {
     drawCircles(getCanvas,htmlLevel, HTML, color);
     drawCircles(getCanvas,cssLevel, CSSNAME, color);
     drawCircles(getCanvas,jsLevel, JS, color);
+    drawCircles(getCanvas,reactLevel, REACT, color);
     console.log("ccolor")
+    setLight()
 }
 // Get canvas element and get context
 let getCanvas = (idCanvas) => {

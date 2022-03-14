@@ -42,13 +42,14 @@ let lightmood = false
 // Change light mode
 let setLight = () => {
     let body_l = document.getElementsByTagName("body");
+    let inputs = document.getElementsByTagName("input");
     let text = document.getElementsByClassName("text-color-sw")
     let btnNav = document.getElementsByClassName("hamburguer-btn");
     let lanBtn = document.getElementsByClassName("language-icon")
     let scrollBtn = document.getElementsByClassName("scroll-btn")
+    let beforeLine = document.getElementsByClassName("timeline-items")
     let toggle = document.getElementsByClassName("toggle-btn")
     if (!lightmood) {
-        
         body_l[0].style.backgroundColor = "#FFFFFF"
         body_l[0].style.color = "#000000"
         btnNav[0].src = "assets/icon/hamburguerBlack.svg"
@@ -59,7 +60,14 @@ let setLight = () => {
             console.log("color");
             i.style.color = SVGFILES[0];
         }
-        lightmood = true;
+        for (let i of beforeLine) {
+            i.style.setProperty("--color", "#000")
+        }
+        for (let i of inputs) {
+            i.style.backgroundColor = "#fff"
+            i.style.color = "#000"
+        }
+        lightmood = !lightmood;
     }
     else {
         
@@ -73,6 +81,13 @@ let setLight = () => {
             console.log("color");
             i.style.color = "#FFFFFF"
         }
-        lightmood = false;
+        for (let i of beforeLine) {
+            i.style.setProperty("--color", "#fff")
+        }
+        for (let i of inputs) {
+            i.style.backgroundColor = "#000"
+            i.style.color = "#fff"
+        }
+        lightmood = !lightmood;
     }
 }
