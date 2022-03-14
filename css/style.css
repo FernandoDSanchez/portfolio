@@ -142,6 +142,9 @@ a {
     width: 30vw;
     border-radius: 1em;
 }
+.work-card img:hover {
+    opacity: 0.8;
+}
 .about-container { 
     width: 100vw;
     height: 100vh;

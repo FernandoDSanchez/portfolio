@@ -34,8 +34,9 @@ form.addEventListener('submit', (e)=> {
         phone: phone.value,
         message: message.value
     }
-    postData('http://localhost:5000/email', formData)
+    postData('https://fathomless-eyrie-28906.herokuapp.com/email', formData)
         .then(data => {
+            alert('Email sent successfully')
             console.log(data); // JSON data parsed by `data.json()` call
         });
     });
