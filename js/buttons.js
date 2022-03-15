@@ -49,6 +49,7 @@ let setLight = () => {
     let scrollBtn = document.getElementsByClassName("scroll-btn")
     let beforeLine = document.getElementsByClassName("timeline-items")
     let toggle = document.getElementsByClassName("toggle-btn")
+    let bcolor = document.getElementById("about-section")
     if (!lightmood) {
         body_l[0].style.backgroundColor = "#FFFFFF"
         body_l[0].style.color = "#000000"
@@ -56,6 +57,7 @@ let setLight = () => {
         lanBtn[0].src = "assets/icon/languageBlack.svg"
         scrollBtn[0].src = "assets/icon/scrollBlack.svg"
         toggle[0].src = "assets/icon/toggleBlack.svg"
+        bcolor.style.setProperty("--bcolor", "#red")
         for (let i of text){
             console.log("color");
             i.style.color = SVGFILES[0];
@@ -77,6 +79,7 @@ let setLight = () => {
         lanBtn[0].src = "assets/icon/language.svg"
         scrollBtn[0].src = "assets/icon/scroll.svg"
         toggle[0].src = "assets/icon/toggle.svg"
+        bcolor.style.setProperty("--bcolor", "#000")
         for (let i of text){
             console.log("color");
             i.style.color = "#FFFFFF"

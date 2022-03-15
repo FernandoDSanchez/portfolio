@@ -3,7 +3,7 @@
     padding: 0;
     border: 0;
     font-size:  10px;
-    --color: #000;
+    
 }
 
 ::-webkit-scrollbar {
@@ -44,8 +44,9 @@ body {
 }
 
 a {
-    color: #FFFF;
+    color: var(--color);
     text-decoration: none;
+    
 }
 .main-container{
     width: 100vw;
@@ -138,10 +139,7 @@ a {
 
 
 
-.work-card img {
-    width: 30vw;
-    border-radius: 1em;
-}
+
 .work-card img:hover {
     opacity: 0.8;
 }
